@@ -1,6 +1,6 @@
 ### Hey 👋
 
-- 🔭 Back-end
+- 🔭 Discover
 - 🌱 Learning c++, js, py, css and html.
 - 📫 How to reach me: lucasspinola3@gmail.com
 
