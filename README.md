@@ -3,6 +3,7 @@
 - 🔭 Discover
 - 🌱 Learning c++, js, py, css and html.
 - 📫 How to reach me: lucasspinola3@gmail.com
+- 🔍 Pesquisa em: "Desenvolvimento de Assistentes Virtuais Educacionais com base em Processamento de Linguagem Natural".
  <div>
   <a href="https://www.youtube.com/channel/UCmsVM9SsmyPLprT79DicFxg" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"  target="_blank"><a/>
   <a href="https://www.instagram.com/lucasspinola_/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"  target="_blank"><a/>
