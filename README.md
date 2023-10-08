@@ -1,7 +1,7 @@
 ### Hey 👋
 
 - 🔭 Discover
-- 🌱 Learning c++, js, py, css and html.
+- 🌱 Learning c++, js, py, css, html and nodejs.
 - 📫 Email: lucasspinola3@gmail.com
 - 🔍 Pesquisa em: "Desenvolvimento de Assistentes Virtuais Educacionais com base em Processamento de Linguagem Natural e Coleta de dados por Assistente Virtual Educacional".
  <div>
