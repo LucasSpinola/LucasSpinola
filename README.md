@@ -3,7 +3,7 @@
 - 🔭 Discover.
 - 🌱 Learning.
 - 📫 Email: lucasspinola3@gmail.com
-- 🔍 Pesquisa em: "Desenvolvimento de Assistentes Virtuais Educacionais com base em Processamento de Linguagem Natural e Coleta de dados por Assistente Virtual Educacional".
+- 🔍 Pesquisa em: "Desenvolvimento de Assistentes Virtuais Educacionais com base em Processamento de Linguagem Natural, Coleta de dados por Assistente Virtual Educacional e Estudo de métodos de inteligência artificial generativa para aplicação em problemas educacionais".
  <div>
   <a href="https://www.youtube.com/channel/UCmsVM9SsmyPLprT79DicFxg" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"  target="_blank"><a/>
   <a href="https://www.instagram.com/lcspinola/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"  target="_blank"><a/>
