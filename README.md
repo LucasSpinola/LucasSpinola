@@ -3,7 +3,8 @@
 - 🔭 **Currently exploring:** new opportunities and challenges in tech  
 - 🌱 **Lifelong learner:** continuously improving and acquiring new skills  
 - 🔍 **Research focus:**  
-  _"Development of Educational Virtual Assistants based on Natural Language Processing, Data Collection through Virtual Assistants, and creation of an Educational Virtual Assistant powered by Generative AI"  
+  "Development of Educational Virtual Assistants based on Natural Language Processing, Data Collection through Virtual Assistants, and creation of an Educational Virtual Assistant powered by Generative AI"  
+
 - 📝 **Academic profiles:**  
   [ORCID](https://orcid.org/0009-0005-9206-8452) | [Lattes](https://lattes.cnpq.br/2230852814710667)
 
