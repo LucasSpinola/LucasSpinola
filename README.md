@@ -1,4 +1,4 @@
-<h1 align="center">Hey there! 👋 I'm Lucas Spínola</h1>
+<h1 align="center">Hey there! 👋 I'm Lucas Spinola</h1>
 
 - 🔭 **Currently exploring:** new opportunities and challenges in tech  
 - 🌱 **Lifelong learner:** continuously improving and acquiring new skills  
@@ -38,7 +38,7 @@
 
 ---
 
-## 🧰 Tech Stack
+## 💻 Tech Stack
 
 <p align="center">
   <img title="Python" alt="Python" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
@@ -62,7 +62,6 @@
 ## 📬 Contact Me
 
 - 📧 **Email:** [lucasspinola3@gmail.com](mailto:lucasspinola3@gmail.com)
-- 🌐 **Website/Portfolio:** *coming soon*
 
 ---
 
