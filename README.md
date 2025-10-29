@@ -5,8 +5,7 @@
 - 🔍 **Research focus:**  
   "Development of Educational Virtual Assistants based on Natural Language Processing, Data Collection through Virtual Assistants, and creation of an Educational Virtual Assistant powered by Generative AI"  
 
-- 📝 **Academic profiles:**  
-  [ORCID](https://orcid.org/0009-0005-9206-8452) | [Lattes](https://lattes.cnpq.br/2230852814710667)
+- 📝 **Academic profiles:**  [Lattes](https://lattes.cnpq.br/2230852814710667)
 
 <p align="center">
   <a href="https://www.youtube.com/channel/UCmsVM9SsmyPLprT79DicFxg" target="_blank">
