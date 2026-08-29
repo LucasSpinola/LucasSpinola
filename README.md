@@ -22,7 +22,7 @@
 
 ## Sobre
 
-Sou desenvolvedor e trabalho com backend e aplicações web. Desde 2022 pesquiso Processamento de Linguagem Natural aplicado à educação, hoje com foco em IA Generativa.
+Sou desenvolvedor. Desde 2022 pesquiso Processamento de Linguagem Natural aplicado à educação, hoje com foco em IA Generativa.
 
 - 🎓 **Formação:** graduando em Engenharia de Computação na UFRN
 - 🔬 **Pesquisa:** Assistentes Virtuais Educacionais baseados em PLN, coleta de métricas de aprendizado durante a interação e uso de IA Generativa para apoiar aluno e professor
