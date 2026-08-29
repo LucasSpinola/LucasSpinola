@@ -1,68 +1,79 @@
-<h1 align="center">Hey there! 👋 I'm Lucas Spinola</h1>
+<div align="center">
 
-- 🔭 **Currently exploring:** new opportunities and challenges in tech  
-- 🌱 **Lifelong learner:** continuously improving and acquiring new skills  
-- 🔍 **Research focus:**  
-  "Development of Educational Virtual Assistants based on Natural Language Processing, Data Collection through Virtual Assistants, and creation of an Educational Virtual Assistant powered by Generative AI"  
+<img src="https://capsule-render.vercel.app/api?type=waving&height=170&color=0:0f2027,50:203a43,100:2c5364&text=Lucas%20Spinola&fontColor=ffffff&fontSize=48&fontAlign=50&fontAlignY=36&desc=Desenvolvedor%20de%20Software%20%7C%20Pesquisador%20em%20IA%20e%20PLN&descSize=16&descAlign=50&descAlignY=58" width="100%" alt="Lucas Spinola" />
 
-- 📝 **Academic profiles:**  [Lattes](https://lattes.cnpq.br/2230852814710667)
+<a href="https://www.linkedin.com/in/lucasspinola3/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+</a>
+<a href="mailto:lucasspinola3@gmail.com">
+  <img src="https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" />
+</a>
+<a href="https://lattes.cnpq.br/2230852814710667">
+  <img src="https://img.shields.io/badge/Lattes-005B9A?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Currículo Lattes" />
+</a>
+<a href="https://www.youtube.com/channel/UCmsVM9SsmyPLprT79DicFxg">
+  <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
+</a>
+<a href="https://www.instagram.com/lcspinola/">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+</a>
 
-<p align="center">
-  <a href="https://www.youtube.com/channel/UCmsVM9SsmyPLprT79DicFxg" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
-  </a>
-  <a href="https://www.instagram.com/lcspinola/" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
-  </a>
-  <a href="mailto:lucasspinola3@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
-  </a>
-</p>
+<img src="https://komarev.com/ghpvc/?username=LucasSpinola&label=Visitas%20no%20perfil&color=2c5364&style=flat-square" alt="Contador de visitas" />
 
----
+</div>
 
-## 📈 GitHub Stats
+## Sobre mim
 
-<p align="center">
-  <a href="https://github.com/LucasSpinola">
-    <img width="49%" src="https://streak-stats.demolab.com/?user=LucasSpinola&theme=tokyonight" alt="GitHub Streak">
-    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=LucasSpinola&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats">
-  </a>
-</p>
+Desenvolvedor de software com foco em **backend**, **aplicações web** e **Inteligência Artificial aplicada**. Atuo na construção de sistemas que unem engenharia de software e Processamento de Linguagem Natural, com atenção a arquitetura, qualidade de código e escalabilidade.
 
----
+- 🔬 **Pesquisa:** Desenvolvimento de Assistentes Virtuais Educacionais baseados em Processamento de Linguagem Natural — coleta de dados por meio de assistentes virtuais e criação de um Assistente Virtual Educacional apoiado por IA Generativa.
+- 🎓 **Formação:** Universidade Federal do Rio Grande do Norte (UFRN).
+- 🌱 **Estudando agora:** arquiteturas de sistemas distribuídos, LLMs e boas práticas de engenharia de software.
+- 💬 **Aberto a:** colaborações em projetos de IA, código aberto e novas oportunidades.
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=LucasSpinola&theme=tokyonight&no-frame=true&margin-w=15">
-</p>
+## Tecnologias
 
----
+<div align="center">
 
-## 💻 Tech Stack
+**Linguagens**
 
-<p align="center">
-  <img title="Python" alt="Python" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-  <img title="JavaScript" alt="JavaScript" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-  <img title="TypeScript" alt="TypeScript" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
-  <img title="React" alt="React" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-  <img title="Next.js" alt="Next.js" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg">
-  <img title="Angular" alt="Angular" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg">
-  <img title="Node.js" alt="Node.js" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
-  <img title="Django" alt="Django" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg">
-  <img title="GraphQL" alt="GraphQL" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg">
-  <img title="RabbitMQ" alt="RabbitMQ" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg">
-  <img title="gRPC" alt="gRPC" height="40" src="https://grpc.io/img/logos/grpc-icon-color.png">
-  <img title="C++" alt="C++" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
-  <img title="HTML5" alt="HTML5" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-  <img title="CSS3" alt="CSS3" height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-</p>
+<img src="https://skillicons.dev/icons?i=py,ts,js,cpp&theme=dark" alt="Python, TypeScript, JavaScript, C++" />
 
----
+**Frontend**
 
-## 📬 Contact Me
+<img src="https://skillicons.dev/icons?i=react,nextjs,angular,html,css,tailwind&theme=dark" alt="React, Next.js, Angular, HTML, CSS, Tailwind" />
 
-- 📧 **Email:** [lucasspinola3@gmail.com](mailto:lucasspinola3@gmail.com)
+**Backend e Dados**
 
----
+<img src="https://skillicons.dev/icons?i=nodejs,django,fastapi,graphql,postgres,rabbitmq&theme=dark" alt="Node.js, Django, FastAPI, GraphQL, PostgreSQL, RabbitMQ" />
 
-✨ _Thanks for visiting my GitHub profile! Feel free to connect with me on social media or via email._
+**Ferramentas**
+
+<img src="https://skillicons.dev/icons?i=docker,git,github,linux,vscode,postman&theme=dark" alt="Docker, Git, GitHub, Linux, VS Code, Postman" />
+
+</div>
+
+## Estatísticas
+
+<div align="center">
+
+<img src="./metrics/metrics.svg" width="49%" alt="Métricas gerais do GitHub" />
+<img src="./metrics/metrics.plugin.languages.svg" width="49%" alt="Linguagens mais usadas" />
+
+<img src="./metrics/metrics.plugin.isocalendar.svg" width="99%" alt="Calendário de contribuições" />
+
+</div>
+
+## Contato
+
+Para propostas de trabalho, parcerias acadêmicas ou dúvidas sobre os projetos:
+
+- **E-mail:** [lucasspinola3@gmail.com](mailto:lucasspinola3@gmail.com)
+- **LinkedIn:** [linkedin.com/in/lucasspinola3](https://www.linkedin.com/in/lucasspinola3/)
+- **Lattes:** [lattes.cnpq.br/2230852814710667](https://lattes.cnpq.br/2230852814710667)
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=110&color=0:2c5364,50:203a43,100:0f2027" width="100%" alt="" />
+
+</div>
