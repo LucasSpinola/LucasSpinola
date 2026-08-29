@@ -22,35 +22,11 @@
 
 ## Sobre
 
-Sou desenvolvedor e pesquisador na UFRN. Trabalho com backend e aplicações web, e desde 2022 pesquiso Processamento de Linguagem Natural aplicado à educação, hoje com foco em IA Generativa.
+Sou desenvolvedor e trabalho com backend e aplicações web. Desde 2022 pesquiso Processamento de Linguagem Natural aplicado à educação, hoje com foco em IA Generativa.
 
-Minha linha de pesquisa é a construção de Assistentes Virtuais Educacionais: sistemas que conversam com o aluno, coletam métricas de aprendizado durante a interação e devolvem informação útil para o professor acompanhar a turma.
-
-Estou aberto a colaborações em projetos de IA e código aberto.
-
-## Pesquisa
-
-Todos os projetos foram desenvolvidos no âmbito da UFRN, sob coordenação do Prof. Orivaldo Vieira de Santana Júnior.
-
-**2025 - atual · Algoritmos de aprendizado profundo aplicados a problemas de inovação tecnológica** `em andamento`
-
-Desenvolvimento de um agente inteligente para avaliação contínua do estudante. Envolve estudo de modelos generativos, integração com a plataforma educacional e validação com dados reais, no contexto da Educação 4.0.
-
-**2024 - 2025 · Assistente Virtual Educacional com Inteligência Artificial Generativa** `concluído`
-
-Integração de modelos generativos a um assistente virtual já existente, ampliando sua capacidade de apoiar o aluno de forma personalizada. Inclui análise de abordagens anteriores em PLN e validação das funcionalidades.
-
-**2023 - 2024 · Coleta de dados por Assistente Virtual Educacional** `concluído`
-
-Definição das métricas mais relevantes para medir o progresso do aluno, melhoria das interfaces de interação e verificação da eficácia da coleta. Também usou IA generativa para avaliar métricas de linguagem narrativa.
-
-<sub>Em colaboração com Ian Antonio Fonseca Araújo.</sub>
-
-**2022 - 2023 · Assistentes Virtuais Educacionais com base em Processamento de Linguagem Natural** `concluído`
-
-Ponto de partida da linha de pesquisa. Aplicação de técnicas de PLN para que alunos e professores interajam com conteúdo educacional de forma mais natural.
-
-<sub>Em colaboração com Ian Antonio Fonseca Araújo.</sub>
+- 🎓 **Formação:** graduando em Engenharia de Computação na UFRN
+- 🔬 **Pesquisa:** Assistentes Virtuais Educacionais baseados em PLN, coleta de métricas de aprendizado durante a interação e uso de IA Generativa para apoiar aluno e professor
+- 💬 **Aberto a:** colaborações em projetos de IA e código aberto
 
 ## Tecnologias
 
@@ -58,7 +34,7 @@ Ponto de partida da linha de pesquisa. Aplicação de técnicas de PLN para que 
 
 **Linguagens**
 
-<img src="https://skillicons.dev/icons?i=py,ts,js,cpp&theme=dark" alt="Python, TypeScript, JavaScript, C++" />
+<img src="https://skillicons.dev/icons?i=py,java,ts,js,cpp&theme=dark" alt="Python, Java, TypeScript, JavaScript, C++" />
 
 **Frontend**
 
@@ -66,7 +42,7 @@ Ponto de partida da linha de pesquisa. Aplicação de técnicas de PLN para que 
 
 **Backend e Dados**
 
-<img src="https://skillicons.dev/icons?i=nodejs,django,fastapi,graphql,postgres,rabbitmq&theme=dark" alt="Node.js, Django, FastAPI, GraphQL, PostgreSQL, RabbitMQ" />
+<img src="https://skillicons.dev/icons?i=spring,nodejs,django,fastapi,graphql,postgres,rabbitmq&theme=dark" alt="Spring Boot, Node.js, Django, FastAPI, GraphQL, PostgreSQL, RabbitMQ" />
 
 **Ferramentas**
 
