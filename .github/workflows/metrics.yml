@@ -20,6 +20,8 @@ jobs:
           filename: metrics/metrics.svg
           template: classic
           base: header, activity, community, repositories, metadata
+          repositories_affiliations: owner, collaborator
+          repositories: 100
           config_timezone: America/Fortaleza
           config_display: large
           plugin_achievements: yes
@@ -33,6 +35,8 @@ jobs:
           user: LucasSpinola
           filename: metrics/metrics.plugin.languages.svg
           base: ""
+          repositories_affiliations: owner, collaborator
+          repositories: 100
           config_timezone: America/Fortaleza
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
