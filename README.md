@@ -19,7 +19,7 @@
 
 ## ~/sobre
 
-Estudante de Engenharia de Computação na UFRN, trabalhando com DevOps e infraestrutura. Sou estagiário de DevOps na Aiyra Engenharia de Dados e, na incubadora inPACTA (ECT/UFRN), administro o cluster Proxmox de cinco nós que roda os MVPs das startups incubadas, com monitoramento em Zabbix e Grafana e deploy pelo GitLab CI.
+Estudante de Engenharia de Computação na UFRN, trabalhando com DevOps e infraestrutura. Sou estagiário de DevOps na Aiyra Engenharia de Dados e, na incubadora inPACTA (ECT/UFRN), administro o cluster Proxmox de cinco nós onde rodam mais de 20 aplicações, entre elas mais de 15 MVPs de startups incubadas, com monitoramento em Zabbix e Grafana e deploy pelo GitLab CI.
 
 Cheguei na infraestrutura vindo do desenvolvimento: foram dois anos como dev na LogAp, com Angular, Django e Spring Boot, e quatro anos de Iniciação Científica (CNPq) em IA aplicada à educação. Nesse período criei um bot educacional no Discord e depois uma plataforma integrada ao SIGAA, que juntos já foram usados por mais de 1000 estudantes e renderam três artigos publicados.
 
@@ -28,24 +28,49 @@ Cheguei na infraestrutura vindo do desenvolvimento: foram dois anos como dev na 
 <details>
 <summary><b>DevOps</b> · Aiyra Engenharia de Dados &nbsp;<code>estágio · 2026 → atual</code></summary>
 
-- Configuro e mantenho os ambientes de desenvolvimento, teste e produção com infraestrutura como código
-- Construo e mantenho pipelines de CI/CD com deploy automatizado em produção
-- Acompanho o desempenho dos sistemas com monitoramento contínuo e apoio a resolução de incidentes
-- Uso containers para rodar os serviços de apoio e as suítes de teste das aplicações
+Na Aiyra, empresa de engenharia de dados, cuido do caminho que o código percorre até produção: os ambientes onde ele roda, a esteira que o entrega e o monitoramento que avisa quando algo sai do normal.
+
+**Ambientes e infraestrutura como código**
+
+- Configuro e mantenho os ambientes de desenvolvimento, teste e produção descritos como código, para que possam ser recriados do mesmo jeito e as diferenças entre eles não virem bug em produção
+
+**Entrega contínua**
+
+- Construo e mantenho as pipelines de CI/CD, com deploy automatizado em produção
+- Uso containers para rodar os serviços de apoio e as suítes de teste das aplicações, então os testes rodam sempre no mesmo ambiente, isolados da máquina de quem desenvolve
+
+**Monitoramento e incidentes**
+
+- Acompanho o desempenho dos sistemas com monitoramento contínuo, identifico problemas e apoio a resolução dos incidentes
 
 </details>
 
 <details>
 <summary><b>Infraestrutura e DevOps</b> · inPACTA (ECT/UFRN) &nbsp;<code>bolsista · 2026 → atual</code></summary>
 
-Cuido da infraestrutura própria da incubadora: é nela que rodam os MVPs das startups incubadas e os ambientes de professores e pesquisadores da ECT.
+Respondo pela infraestrutura computacional da inPACTA, a incubadora da ECT/UFRN, e pela automação de implantação das aplicações. É uma infraestrutura própria: hoje são **42 containers** rodando **mais de 20 aplicações**, das quais **mais de 15 são MVPs** das startups incubadas, além dos ambientes de professores e das cargas de pesquisa que precisam de GPU. Por isso o trabalho vai do hardware ao deploy: virtualização, padronização, monitoramento, entrega contínua e segurança de acesso.
 
-- **Consolidação do cluster:** juntei servidores que rodavam isolados num cluster Proxmox VE de cinco nós, com ZFS e containers LXC, incluindo um nó com GPU dedicada que os containers de pesquisa usam via passthrough
-- **Ambiente pronto em um clone:** template Debian 12 com Docker, agente de monitoramento, chave SSH, limites de log e localização já configurados, então todo container novo já nasce padronizado e monitorado
-- **Atualização com rollback:** migrei o Zabbix do 5.4 para o 7.0 LTS e o Grafana do 9.5 para o 13, subindo a versão nova em paralelo e mantendo a antiga pronta para voltar
-- **Observabilidade:** dashboards do Grafana reorganizados numa visão única do cluster, com variáveis e repetição de painéis, e Uptime Kuma acompanhando a disponibilidade dos serviços
-- **Entrega contínua:** GitLab próprio com pipelines de CI/CD e deploy automatizado dos MVPs em produção
-- **Gestão de segredos:** Vaultwarden centralizando as credenciais da equipe
+**Virtualização e cluster**
+
+- Consolidei num cluster Proxmox VE de cinco nós os servidores que antes rodavam isolados e eram administrados um a um. Hoje tudo é gerenciado de um lugar só
+- Armazenamento em ZFS e cargas em containers LXC, mais leves que máquinas virtuais para os MVPs e os serviços internos
+- Integrei ao cluster um nó com GPU dedicada, compartilhada via passthrough entre containers LXC de pesquisa. Assim vários trabalhos usam a placa sem precisar de uma VM exclusiva para cada um
+
+**Padronização de ambientes**
+
+- Criei um template de container em Debian 12 que já nasce com Docker, agente de monitoramento, chave SSH de acesso, limites de log e localização configurados
+- Criar um ambiente novo virou clonar o template: o container sobe acessível, com os logs sem risco de lotar o disco e já aparecendo no monitoramento, sem nenhuma configuração manual
+
+**Observabilidade**
+
+- Migrei o Zabbix do 5.4 para o 7.0 LTS e o Grafana do 9.5 para o 13, saltos que atravessam várias versões principais. Para não arriscar o monitoramento em produção, subi as versões novas em paralelo e mantive as antigas prontas como rollback
+- Refiz os dashboards do Grafana numa visão única do cluster, com variáveis e repetição de painéis: o mesmo painel se replica para cada nó, então um nó novo entra no dashboard sem precisar editá-lo
+- Coloquei o Uptime Kuma para acompanhar a disponibilidade dos serviços, complementando as métricas do Zabbix
+
+**Entrega contínua e segurança**
+
+- Mantenho o GitLab próprio da incubadora, com pipelines de CI/CD que fazem o deploy automatizado dos MVPs em produção
+- Implantei o Vaultwarden como cofre de senhas da equipe, centralizando as credenciais num só lugar e com controle de quem acessa o quê
 
 **Stack:** Proxmox VE, ZFS, LXC, Docker, Debian, Zabbix, Grafana, Uptime Kuma, GitLab CI/CD, Vaultwarden
 
@@ -54,21 +79,51 @@ Cuido da infraestrutura própria da incubadora: é nela que rodam os MVPs das st
 <details>
 <summary><b>Desenvolvedor</b> · LogAp Sistemas &nbsp;<code>estágio · 2024 → 2026</code></summary>
 
-- Desenvolvi aplicações web e sistemas distribuídos, da análise à implantação
-- Front-end em Angular; back-end em Django (Python) e Spring Boot (Java), com APIs REST e bancos relacionais
-- Comunicação entre serviços com GraphQL, gRPC e RabbitMQ, e testes automatizados das APIs
-- Sustentação de sistemas em produção de clientes do setor público: monitoramento, análise de incidentes, correção de falhas e otimização de desempenho
-- Cuidei dos ambientes de desenvolvimento, teste e produção com infraestrutura como código e CI/CD, em time com Scrum e Kanban
+Na LogAp trabalhei em aplicações web e sistemas distribuídos passando por todas as etapas, da análise à implantação, e depois na sustentação desses sistemas em produção para clientes do setor público.
+
+**Desenvolvimento**
+
+- Front-end em Angular, com interfaces dinâmicas e responsivas
+- Back-end em Django (Python) e em Spring Boot (Java), com APIs REST e bancos de dados relacionais
+- Comunicação entre serviços com GraphQL, gRPC e RabbitMQ
+- Testes automatizados das APIs
+
+**Sustentação em produção**
+
+- Monitoramento e análise de desempenho dos sistemas dos clientes, identificação de problemas e apoio à resolução de incidentes
+- Correção de falhas, otimização de desempenho e aplicação de boas práticas de segurança
+
+**Ambientes e entrega**
+
+- Configuração e manutenção dos ambientes de desenvolvimento, teste e produção com infraestrutura como código
+- Pipelines de CI/CD com implantação automatizada em produção
+- Trabalho em equipe multidisciplinar com Scrum e Kanban
 
 </details>
 
 <details>
 <summary><b>Iniciação Científica (CNPq)</b> · UFRN &nbsp;<code>bolsista · 2022 → 2026</code></summary>
 
-- Pesquisa em IA aplicada à educação: assistentes virtuais educacionais, PLN e IA generativa
-- **Monitor Bot:** assistente no Discord em Python (discord.py, FastAPI, NLTK) com perguntas e respostas por similaridade de texto, minitestes ao vivo, registro de presença e análise das respostas para o professor. Virou [artigo](https://periodicos.ufrn.br/casoseconsultoria/article/view/33870) em que sou primeiro autor
-- **Plataforma integrada ao SIGAA:** evolução do bot para avaliação contínua na disciplina de Lógica de Programação, com correção automática de código, quizzes ao vivo e retorno gerado por LLM nas questões discursivas. Feita com Angular, Django REST Framework, Django Channels, Redis, PostgreSQL, Docker e GitLab CI
-- Somando o bot e a plataforma, **mais de 1000 estudantes** usaram as ferramentas nas turmas, com menos tempo de espera por retorno e menos sobrecarga da monitoria
+Quatro anos de pesquisa em IA aplicada à educação na Escola de Ciências e Tecnologia, com foco em acompanhar o aprendizado da turma de forma contínua e apoiar as decisões do professor. A resposta evoluiu de um bot no Discord para uma plataforma integrada ao sistema acadêmico da UFRN.
+
+**Monitor Bot**
+
+- Assistente no Discord em Python, com discord.py, FastAPI e NLTK. As funcionalidades saíram de uma pesquisa qualitativa com alunos e professores
+- Perguntas e respostas com PLN: a dúvida passa por remoção de stopwords e stemming e é comparada por similaridade com uma base de perguntas conhecidas
+- Minitestes ao vivo, registro de presença e análise das respostas para o professor enxergar onde a turma errou
+- Virou [artigo](https://periodicos.ufrn.br/casoseconsultoria/article/view/33870) em que sou primeiro autor. Na mesma linha de pesquisa, sou coautor de mais dois artigos, sobre autorregulação da aprendizagem e sobre uma ferramenta de visualização para a Educação 4.0
+
+**Plataforma integrada ao SIGAA**
+
+- Evolução do bot para uma plataforma web usada na disciplina de Lógica de Programação, com três formas de avaliação contínua
+- **Código:** correção automática executando a resposta contra casos de teste, registrando tentativas e tempo de resolução
+- **Quizzes:** múltipla escolha com modo ao vivo e participação em tempo real
+- **Questões discursivas:** a resposta do aluno é comparada com a esperada por similaridade de cosseno entre representações vetoriais, e um modelo de linguagem gera retorno com nota, resumo, pontos a revisar e sugestões de estudo, com registro por aluno e por turma. O professor continua revisando o que a IA gera
+- Feita com Angular, Django REST Framework, Django Channels e Redis para o tempo real, PostgreSQL, Docker e GitLab CI
+
+**Resultado**
+
+- Somando o bot e a plataforma, **mais de 1000 estudantes** usaram as ferramentas. Na validação formal da plataforma, com cerca de 60 alunos das turmas de laboratório, caiu o tempo de espera por retorno e a sobrecarga da monitoria
 
 </details>
 
