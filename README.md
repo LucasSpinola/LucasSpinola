@@ -19,113 +19,13 @@
 
 ## ~/sobre
 
-Estudante de Engenharia de Computação na UFRN, trabalhando com DevOps e infraestrutura. Sou estagiário de DevOps na Aiyra Engenharia de Dados e, na incubadora inPACTA (ECT/UFRN), administro o cluster Proxmox de cinco nós onde rodam mais de 20 aplicações, entre elas mais de 15 MVPs de startups incubadas, com monitoramento em Zabbix e Grafana e deploy pelo GitLab CI.
+Estudante de Engenharia de Computação na UFRN, trabalhando com DevOps e infraestrutura. Sou estagiário de DevOps na Aiyra Engenharia de Dados, onde cuido dos ambientes de desenvolvimento, teste e produção com infraestrutura como código, das pipelines de CI/CD e do monitoramento das aplicações.
 
-Cheguei na infraestrutura vindo do desenvolvimento: foram dois anos como dev na LogAp, com Angular, Django e Spring Boot, e quatro anos de Iniciação Científica (CNPq) em IA aplicada à educação. Nesse período criei um bot educacional no Discord e depois uma plataforma integrada ao SIGAA, que juntos já foram usados por mais de 1000 estudantes e renderam três artigos publicados.
+Fui responsável pela infraestrutura da inPACTA, a incubadora da ECT/UFRN, onde professores, alunos e startups dependem dos mesmos servidores. Estruturei um cluster Proxmox VE de cinco nós com ZFS e containers LXC, trazendo para dentro dele servidores que antes rodavam isolados, entre eles um com GPU NVIDIA dedicada à pesquisa, cujo passthrough precisou ser preservado sem derrubar o trabalho de quem usava. Para parar de configurar ambiente na mão, criei um template Debian com Docker, agente de monitoramento e limites de log já prontos: um ambiente novo passou a sair de um único clone, já monitorado. No fim, eram 42 containers servindo mais de 20 aplicações, entre elas mais de 15 MVPs de startups incubadas.
 
-## ~/experiencia
+Implantei o Zabbix 7.0 LTS com Grafana por cima, num dashboard único com todos os nós lado a lado e alertas por e-mail. Foi por ele que apareceram problemas que ainda não davam sinal, como um container de produção perto de lotar o disco e o ZFS consumindo memória sem limite. Também entraram cofre de senhas com Vaultwarden, acompanhamento de disponibilidade com Uptime Kuma, acesso às aplicações pelo Nginx Proxy Manager com certificados automáticos, backups no Proxmox Backup Server e deploy dos MVPs por pipelines de CI/CD no GitLab. A parte menos visível foi revisar os acessos servidor por servidor, conferindo chaves SSH, credenciais e permissões, e migrando as senhas para o cofre.
 
-<details>
-<summary><b>DevOps</b> · Aiyra Engenharia de Dados &nbsp;<code>estágio · 2026 → atual</code></summary>
-
-Na Aiyra, empresa de engenharia de dados, cuido do caminho que o código percorre até produção: os ambientes onde ele roda, a esteira que o entrega e o monitoramento que avisa quando algo sai do normal.
-
-**Ambientes e infraestrutura como código**
-
-- Configuro e mantenho os ambientes de desenvolvimento, teste e produção descritos como código, para que possam ser recriados do mesmo jeito e as diferenças entre eles não virem bug em produção
-
-**Entrega contínua**
-
-- Construo e mantenho as pipelines de CI/CD, com deploy automatizado em produção
-- Uso containers para rodar os serviços de apoio e as suítes de teste das aplicações, então os testes rodam sempre no mesmo ambiente, isolados da máquina de quem desenvolve
-
-**Monitoramento e incidentes**
-
-- Acompanho o desempenho dos sistemas com monitoramento contínuo, identifico problemas e apoio a resolução dos incidentes
-
-</details>
-
-<details>
-<summary><b>Infraestrutura e DevOps</b> · inPACTA (ECT/UFRN) &nbsp;<code>bolsista · 2026 → atual</code></summary>
-
-Respondo pela infraestrutura computacional da inPACTA, a incubadora da ECT/UFRN, e pela automação de implantação das aplicações. É uma infraestrutura própria: hoje são **42 containers** rodando **mais de 20 aplicações**, das quais **mais de 15 são MVPs** das startups incubadas, além dos ambientes de professores e das cargas de pesquisa que precisam de GPU. Por isso o trabalho vai do hardware ao deploy: virtualização, padronização, monitoramento, entrega contínua e segurança de acesso.
-
-**Virtualização e cluster**
-
-- Consolidei num cluster Proxmox VE de cinco nós os servidores que antes rodavam isolados e eram administrados um a um. Hoje tudo é gerenciado de um lugar só
-- Armazenamento em ZFS e cargas em containers LXC, mais leves que máquinas virtuais para os MVPs e os serviços internos
-- Integrei ao cluster um nó com GPU dedicada, compartilhada via passthrough entre containers LXC de pesquisa. Assim vários trabalhos usam a placa sem precisar de uma VM exclusiva para cada um
-
-**Padronização de ambientes**
-
-- Criei um template de container em Debian 12 que já nasce com Docker, agente de monitoramento, chave SSH de acesso, limites de log e localização configurados
-- Criar um ambiente novo virou clonar o template: o container sobe acessível, com os logs sem risco de lotar o disco e já aparecendo no monitoramento, sem nenhuma configuração manual
-
-**Observabilidade**
-
-- Migrei o Zabbix do 5.4 para o 7.0 LTS e o Grafana do 9.5 para o 13, saltos que atravessam várias versões principais. Para não arriscar o monitoramento em produção, subi as versões novas em paralelo e mantive as antigas prontas como rollback
-- Refiz os dashboards do Grafana numa visão única do cluster, com variáveis e repetição de painéis: o mesmo painel se replica para cada nó, então um nó novo entra no dashboard sem precisar editá-lo
-- Coloquei o Uptime Kuma para acompanhar a disponibilidade dos serviços, complementando as métricas do Zabbix
-
-**Entrega contínua e segurança**
-
-- Mantenho o GitLab próprio da incubadora, com pipelines de CI/CD que fazem o deploy automatizado dos MVPs em produção
-- Implantei o Vaultwarden como cofre de senhas da equipe, centralizando as credenciais num só lugar e com controle de quem acessa o quê
-
-**Stack:** Proxmox VE, ZFS, LXC, Docker, Debian, Zabbix, Grafana, Uptime Kuma, GitLab CI/CD, Vaultwarden
-
-</details>
-
-<details>
-<summary><b>Desenvolvedor</b> · LogAp Sistemas &nbsp;<code>estágio · 2024 → 2026</code></summary>
-
-Na LogAp trabalhei em aplicações web e sistemas distribuídos passando por todas as etapas, da análise à implantação, e depois na sustentação desses sistemas em produção para clientes do setor público.
-
-**Desenvolvimento**
-
-- Front-end em Angular, com interfaces dinâmicas e responsivas
-- Back-end em Django (Python) e em Spring Boot (Java), com APIs REST e bancos de dados relacionais
-- Comunicação entre serviços com GraphQL, gRPC e RabbitMQ
-- Testes automatizados das APIs
-
-**Sustentação em produção**
-
-- Monitoramento e análise de desempenho dos sistemas dos clientes, identificação de problemas e apoio à resolução de incidentes
-- Correção de falhas, otimização de desempenho e aplicação de boas práticas de segurança
-
-**Ambientes e entrega**
-
-- Configuração e manutenção dos ambientes de desenvolvimento, teste e produção com infraestrutura como código
-- Pipelines de CI/CD com implantação automatizada em produção
-- Trabalho em equipe multidisciplinar com Scrum e Kanban
-
-</details>
-
-<details>
-<summary><b>Iniciação Científica (CNPq)</b> · UFRN &nbsp;<code>bolsista · 2022 → 2026</code></summary>
-
-Quatro anos de pesquisa em IA aplicada à educação na Escola de Ciências e Tecnologia, com foco em acompanhar o aprendizado da turma de forma contínua e apoiar as decisões do professor. A resposta evoluiu de um bot no Discord para uma plataforma integrada ao sistema acadêmico da UFRN.
-
-**Monitor Bot**
-
-- Assistente no Discord em Python, com discord.py, FastAPI e NLTK. As funcionalidades saíram de uma pesquisa qualitativa com alunos e professores
-- Perguntas e respostas com PLN: a dúvida passa por remoção de stopwords e stemming e é comparada por similaridade com uma base de perguntas conhecidas
-- Minitestes ao vivo, registro de presença e análise das respostas para o professor enxergar onde a turma errou
-- Virou [artigo](https://periodicos.ufrn.br/casoseconsultoria/article/view/33870) em que sou primeiro autor. Na mesma linha de pesquisa, sou coautor de mais dois artigos, sobre autorregulação da aprendizagem e sobre uma ferramenta de visualização para a Educação 4.0
-
-**Plataforma integrada ao SIGAA**
-
-- Evolução do bot para uma plataforma web usada na disciplina de Lógica de Programação, com três formas de avaliação contínua
-- **Código:** correção automática executando a resposta contra casos de teste, registrando tentativas e tempo de resolução
-- **Quizzes:** múltipla escolha com modo ao vivo e participação em tempo real
-- **Questões discursivas:** a resposta do aluno é comparada com a esperada por similaridade de cosseno entre representações vetoriais, e um modelo de linguagem gera retorno com nota, resumo, pontos a revisar e sugestões de estudo, com registro por aluno e por turma. O professor continua revisando o que a IA gera
-- Feita com Angular, Django REST Framework, Django Channels e Redis para o tempo real, PostgreSQL, Docker e GitLab CI
-
-**Resultado**
-
-- Somando o bot e a plataforma, **mais de 1000 estudantes** usaram as ferramentas. Na validação formal da plataforma, com cerca de 60 alunos das turmas de laboratório, caiu o tempo de espera por retorno e a sobrecarga da monitoria
-
-</details>
+Cheguei na infraestrutura vindo do desenvolvimento: foram dois anos como dev na LogAp, com Angular no front, Django e Spring Boot no back, e sustentação de sistemas em produção de clientes do setor público. Em paralelo, quatro anos de Iniciação Científica do CNPq em IA aplicada à educação, onde criei um bot educacional no Discord e depois uma plataforma integrada ao SIGAA para avaliação contínua, usados por mais de 1000 estudantes e com três artigos publicados.
 
 ## ~/stack
 
@@ -135,13 +35,13 @@ Quatro anos de pesquisa em IA aplicada à educação na Escola de Ciências e Te
 
 <img src="https://skillicons.dev/icons?i=linux,debian,docker,gitlab,grafana&theme=dark" alt="Linux, Debian, Docker, GitLab, Grafana" />
 
-<sub>+ Proxmox VE, ZFS, LXC, Zabbix, Uptime Kuma, Vaultwarden</sub>
+<img src="./assets/icons-infra.svg" alt="Proxmox VE, OpenZFS, LXC, Zabbix, Nginx Proxy Manager, Uptime Kuma, Vaultwarden" />
 
 **Backend e Dados**
 
 <img src="https://skillicons.dev/icons?i=java,spring,py,django,fastapi,postgres,redis,rabbitmq,graphql&theme=dark" alt="Java, Spring Boot, Python, Django, FastAPI, PostgreSQL, Redis, RabbitMQ, GraphQL" />
 
-<sub>+ gRPC, Django Channels</sub>
+<img src="./assets/icons-backend.svg" alt="gRPC" />
 
 **Frontend**
 
